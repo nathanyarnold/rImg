@@ -3,11 +3,13 @@ rImg
 
 A jQuery plugin for the display of 'responsive design' images via CSS background image declarations
 
-Feel free to clone and use at your own risk.
+Feel free to clone and use at your own risk. Note, this isn't an open source project, it's just publically available. That said, if you'd like to collaborate on this, let me know. 
 
-Basic Usage:
+<em>Note: Doesn't work in IE <=8. Yet. </em>
 
-Attach a 'data-rImg="<filename>"' attribute to any span tags you'd like to use as an image. There are two tokens that are necessary, ?ratio? for the image ratio, and ?size? for the image size. Put these in your src filepath and make that the value for the 'data-rImg' attribute. Eg. <span data-rimg="img/?ratio?/?size?.jpg" />
+<strong>Basic Usage:</strong>
+
+Attach a 'data-rImg="&lt;filename&gt;"' attribute to any span tags you'd like to use as an image. There are two tokens that are necessary, ?ratio? for the image ratio, and ?size? for the image size. Put these in your src filepath and make that the value for the 'data-rImg' attribute. Eg. &lt;span data-rimg="img/?ratio?/?size?.jpg" /&gt;
 
 Add a 'data-rimg-ratio' attribute to define the ratio of the image you'd like to use. Eg. '4x3' or '16x9'
 
