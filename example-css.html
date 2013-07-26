@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta id="metaViewport" content="width=device-width, initial-scale=1" name="viewport">
+	<title>Responsive images using CSS background-image and ratios</title>
+	<style>
+		/* PAGE STYLES, FOR THIS DEMO ONLY */
+		body {margin:20px 0 100px 0; padding:0; text-align:center;}
+		.hero {margin:0 auto 20px; max-width:1200px; text-align:left;}
+		p {margin:0 auto; max-width:1200px; text-align:left; font-family:arial}
+	</style>
+	<!-- rImg Libraries -->
+	<link rel="stylesheet" type="text/css" href="rImg.css">
+</head>
+<body>
+
+	<h3>All CSS</h3>
+
+	<style>
+		#rimg_kitten_1 {background-image:url('img/2x1/320.jpg')}
+		@media (-webkit-min-device-pixel-ratio: 1.5)  { #rimg_kitten_1 {background-image:url('img/2x1/640.jpg')}  }
+		@media (min-width:321px)  { #rimg_kitten_1 {background-image:url('img/2x1/480.jpg')}  }
+		@media (min-width:321px) and (-webkit-min-device-pixel-ratio: 1.5) { #rimg_kitten_1 {background-image:url('img/2x1/960.jpg')}  }
+		@media (min-width:481px)  { #rimg_kitten_1 {background-image:url('img/2x1/568.jpg')}  }
+		@media (min-width:481px) and (-webkit-min-device-pixel-ratio: 1.5) { #rimg_kitten_1 {background-image:url('img/2x1/1280.jpg')}  }
+        @media (min-width:569px)  { #rimg_kitten_1 {background-image:url('img/2x1/640.jpg')}  }
+        @media (min-width:569px) and (-webkit-min-device-pixel-ratio: 1.5) { #rimg_kitten_1 {background-image:url('img/2x1/1280.jpg')}  }
+		@media (min-width:641px)  { #rimg_kitten_1 {background-image:url('img/2x1/768.jpg')}  }
+		@media (min-width:641px) and (-webkit-min-device-pixel-ratio: 1.5) { #rimg_kitten_1 {background-image:url('img/2x1/1600.jpg')}  }
+		@media (min-width:769px)  { #rimg_kitten_1 {background-image:url('img/2x1/960.jpg')}  }
+		@media (min-width:769px) and (-webkit-min-device-pixel-ratio: 1.5) { #rimg_kitten_1 {background-image:url('img/2x1/1600.jpg')}  }
+		@media (min-width:961px)  { #rimg_kitten_1 {background-image:url('img/2x1/1024.jpg')} }
+		@media (min-width:961px) and (-webkit-min-device-pixel-ratio: 1.5) { #rimg_kitten_1 {background-image:url('img/2x1/1600.jpg')}  }
+		@media (min-width:1025px) { #rimg_kitten_1 {background-image:url('img/2x1/1200.jpg')} }
+		@media (min-width:1025px) and (-webkit-min-device-pixel-ratio: 1.5) { #rimg_kitten_1 {background-image:url('img/2x1/1200.jpg')}  }
+	</style>
+	<p>2x1:</p>
+	<div class="hero">
+		<span id="rimg_kitten_1" data-rimg="true" data-rimg-ratio="2x1"></span>
+	</div>
+
+
+	<style>
+		#rimg_kitten_2 {background-image:url('img/4x3/320.jpg')}
+		@media (-webkit-min-device-pixel-ratio: 1.5)  { #rimg_kitten_2 {background-image:url('img/4x3/640.jpg')}  }
+		@media (min-width:321px)  { #rimg_kitten_2 {background-image:url('img/4x3/480.jpg')}  }
+		@media (min-width:321px) and (-webkit-min-device-pixel-ratio: 1.5)  { #rimg_kitten_2 {background-image:url('img/4x3/960.jpg')}  }
+        @media (min-width:481px)  { #rimg_kitten_1 {background-image:url('img/4x3/568.jpg')}  }
+        @media (min-width:481px) and (-webkit-min-device-pixel-ratio: 1.5) { #rimg_kitten_1 {background-image:url('img/4x3/1280.jpg')}  }
+        @media (min-width:569px)  { #rimg_kitten_1 {background-image:url('img/4x3/640.jpg')}  }
+        @media (min-width:569px) and (-webkit-min-device-pixel-ratio: 1.5) { #rimg_kitten_1 {background-image:url('img/4x3/1280.jpg')}  }
+		@media (min-width:641px)  { #rimg_kitten_2 {background-image:url('img/4x3/768.jpg')}  }
+		@media (min-width:641px) and (-webkit-min-device-pixel-ratio: 1.5)  { #rimg_kitten_2 {background-image:url('img/4x3/1200.jpg')}  }
+		@media (min-width:769px)  { #rimg_kitten_2 {background-image:url('img/4x3/960.jpg')}  }
+		@media (min-width:769px) and (-webkit-min-device-pixel-ratio: 1.5)  { #rimg_kitten_2 {background-image:url('img/4x3/1200.jpg')}  }
+		@media (min-width:961px)  { #rimg_kitten_2 {background-image:url('img/4x3/1024.jpg')} }
+		@media (min-width:961px) and (-webkit-min-device-pixel-ratio: 1.5)  { #rimg_kitten_2 {background-image:url('img/4x3/1200.jpg')}  }
+		@media (min-width:1025px) { #rimg_kitten_2 {background-image:url('img/4x3/1200.jpg')} }
+		@media (min-width:1025px) and (-webkit-min-device-pixel-ratio: 1.5) { #rimg_kitten_2 {background-image:url('img/4x3/1200.jpg')}  }
+	</style>
+	<p>4x3:</p>
+	<div class="hero">
+		<span id="rimg_kitten_2" data-rimg="true" data-rimg-ratio="4x3"></span>
+	</div>
+
+
+</body>
+</html>
