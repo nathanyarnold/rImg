@@ -3,20 +3,47 @@
 <head>
 	<meta charset="utf-8">
 	<meta id="metaViewport" content="width=device-width, initial-scale=1" name="viewport">
-	<title>Responsive images using CSS background-image</title>
+	<title>Responsive images using JS-assisted CSS background-image and ratios</title>
 	<style>
-		/* PAGE STYLES, FOR THIS DEMO ONLY */
-		body {margin:0; padding:20px; text-align:left; font-family:arial}
+		/* DEMO STYLES */
+		body {margin:20px 0 100px 0; padding:0; text-align:center;}
+		.hero {margin:0 auto 20px; max-width:1200px; text-align:left;}
+		p {margin:0 auto; max-width:1200px; text-align:left; font-family:arial}
 	</style>
+	<!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 	<!-- rImg Libraries -->
 	<link rel="stylesheet" type="text/css" href="rImg.css">
+    <script type="text/javascript" src="rImg.js"></script>
 </head>
 <body>
 
-	<h3>Responsive images using CSS background-image and ratios</h3>
+	<h3>JS-Assisted</h3>
+	
+	<p>2:1 (no-retina support)</p>
+	<div class="hero">
+		<span data-rimg="_img/?ratio?/?size?.jpg" data-rimg-ratio="2x1" data-rimg-sizes="320,480,568,640,768,960,1024,1200"></span>
+	</div>
 
-	<p><a href="example-css.html">All CSS Version</a></p>
-	<p><a href="example-js.html">JS-Assisted Version</a></p>
+    <p>16:9 (no-retina support)</p>
+    <div class="hero">
+        <span data-rimg="_img/?ratio?/?size?.jpg" data-rimg-ratio="16x9" data-rimg-sizes="320,480,568,640,768,960,1024,1200"></span>
+    </div>
+
+    <p>3:2</p>
+    <div class="hero">
+        <span data-rimg="_img/?ratio?/?size?.jpg" data-rimg-ratio="3x2" data-rimg-sizes="0-320,0x2-640,321-480,321x2-960,481-568,481x2-1200,569-640,569x2-1200,641-768,641x2-1200,789-960,769x2-1200,961-1024,961x2-1200,1025-1200"></span>
+    </div>
+
+	<p>4:3</p>
+	<div class="hero">
+		<span data-rimg="_img/?ratio?/?size?.jpg" data-rimg-ratio="4x3" data-rimg-sizes="0-320,0x2-640,321-480,321x2-960,481-568,481x2-1200,569-640,569x2-1200,641-768,641x2-1200,789-960,769x2-1200,961-1024,961x2-1200,1025-1200"></span>
+	</div>
+
+	<p>1:1</p>
+    <div class="hero">
+        <span data-rimg="_img/?ratio?/?size?.jpg" data-rimg-ratio="1x1" data-rimg-sizes="0-320,0x2-640,321-480,321x2-960,481-568,481x2-1200,569-640,569x2-1200,641-768,641x2-1200,789-960,769x2-1200,961-1024,961x2-1200,1025-1200"></span>
+    </div>
 
 </body>
 </html>

@@ -35,7 +35,7 @@
 			
 			writeCSS: function( $this ) {
 				// get the attributes we need
-				var imgId = $this.attr('id');
+				var imgId    = $this.attr('id');
 				var imgSrc   = $this.attr('data-rimg');
 				var imgRatio = $this.attr('data-rimg-ratio');
 				var imgSizes = $this.attr('data-rimg-sizes').split(',');
