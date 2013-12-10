@@ -1,9 +1,9 @@
 rImg
 ====
 
-A jQuery plugin for the display of 'responsive design' images via CSS background image declarations
+A jQuery plugin for the display of 'responsive design' images via CSS background image declarations.
 
-Feel free to clone and use at your own risk. Note, this isn't an open source project, it's just publically available. That said, if you'd like to collaborate on this, let me know. 
+Feel free to clone and use at your own risk. This is mostly just an experimental project, to see what's possible, and how this method can best be used/supported. 
 
 <em>Note: Doesn't work in IE <=8. Yet. </em>
 
