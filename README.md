@@ -19,7 +19,7 @@ Add a **data-rImg-ratio** attribute to define the ratio of the image you'd like 
 
 Add a **data-rImg-sizes** attribute to define the various @media breakpoints (and corresponding image size values) you'd like to use. Add these in '-' seperated pairs (eg. 320-320 for @media (min-width:320px) and an image 320px wide). Use the 'x2' extension for retina display images (eg. 320x2-320 for @media (min-width:320px) and (-webkit-min-device-pixel-ratio: 1.5) and an image 320px wide). all query/size pairs should be comma-separated.
 
-    <span data-rImg="img/?ratio?/?size?.jpg" data-rImg-sizes="320-320,320x-640,640-640,640x2-1280">
+    <span data-rImg="img/?ratio?/?size?.jpg" data-rImg-ratio="16x9" data-rImg-sizes="320-320,320x-640,640-640,640x2-1280">
 
 See the example-js.html page as an example of this in action. 
 
